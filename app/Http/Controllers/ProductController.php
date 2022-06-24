@@ -85,7 +85,6 @@ class ProductController extends Controller
             'stock'  => $request->stock,
             'harga_beli'  => $request->harga_beli,
             'harga_jual'  => $request->harga_jual,
-            'status'  => $request->status,
         ]);
         $pesan = 'Product Berhasil Di Update...!!!';
         return redirect(route('product'))->with('pesan',$pesan);

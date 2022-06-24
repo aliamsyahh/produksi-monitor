@@ -86,7 +86,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/product/tambah','ProductController@create')->name('product.create');
     Route::get('/product/edit/{id}','ProductController@edit')->name('product.edit');
     Route::post('/product/simpan','ProductController@store')->name('product.simpan');
-    Route::post('/product/update','ProductConroller@update')->name('product.update');
+    Route::post('/product/update','ProductController@update')->name('product.update');
     Route::delete('/product/delete/{id}','ProductController@destroy')->name('product.delete');
 
     //Supplier
